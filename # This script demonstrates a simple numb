@@ -8,3 +8,4 @@ elif guess > secret:
     print('too high')
 else:
     print('just right')
+

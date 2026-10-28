@@ -1,10 +1,12 @@
 # This script demonstrates a simple number guessing game. use it well
 secret = 7
-guess = 5
+guess = int(input('Guess a number from 1 to 10: '))
 
-if guess < secret:
-    print('too low')
-elif guess > secret:
-    print('too high')
-else:
-    print('just right')
+while guess != secret:
+    if guess < secret:
+        print('too low')
+    else:
+        print('too high')
+    guess = int(input('Try again: '))
+
+print('just right')
